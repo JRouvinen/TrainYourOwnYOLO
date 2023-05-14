@@ -8,6 +8,7 @@ import os
 from timeit import default_timer as timer
 
 import numpy as np
+from tensorflow import keras
 from tensorflow.keras.models import load_model
 from tensorflow.keras.layers import Input
 from PIL import Image, ImageFont, ImageDraw
@@ -15,7 +16,7 @@ from PIL import Image, ImageFont, ImageDraw
 from .yolo3.model import yolo_eval, yolo_body, tiny_yolo_body
 from .yolo3.utils import letterbox_image
 import os
-from tensorflow.keras.utils import multi_gpu_utils
+from keras.utils import multi_gpu_utils
 import tensorflow.compat.v1 as tf
 import tensorflow.python.keras.backend as K
 
